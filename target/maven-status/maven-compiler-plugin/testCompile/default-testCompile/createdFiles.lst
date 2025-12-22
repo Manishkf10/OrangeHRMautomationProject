@@ -1,0 +1,7 @@
+com\orangehrm\tests\HomePageTest.class
+com\orangehrm\tests\LoginPageTest.class
+com\orangehrm\tests\DummyTest2.class
+com\orangehrm\tests\LocalhostLoginValidation.class
+com\orangehrm\tests\ApiTest.class
+com\orangehrm\tests\DBVerificationTest.class
+com\orangehrm\tests\DummyTest.class
