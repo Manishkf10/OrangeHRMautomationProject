@@ -88,16 +88,28 @@ src/test/resources
 
 ## ActionDriver Utilities
 
-A custom **ActionDriver** class is implemented to wrap Selenium actions such as:
+### ActionDriver Utility
+
+A custom **ActionDriver** class is implemented to wrap commonly used Selenium actions such as:
 
 * click()
 * enterText()
-* waitForElementVisible()
-* waitForElementClickable()
-* scrollToElement()
+* getText()
 * compareText()
+* scrollToElement()
+* applyBorder()
 
-This improves **code reusability and readability** in test scripts.
+Each action method in the ActionDriver is designed with:
+
+* **Built-in Explicit Wait (WebDriverWait)** for better synchronization
+* **Try–Catch exception handling** to prevent abrupt test failures
+* **Integrated logging using Log4j**
+* **Step-level reporting using Extent Reports**
+
+The class also utilizes **JavascriptExecutor** for advanced interactions such as scrolling and element highlighting.
+
+This centralized action layer improves **code reusability, readability, stability, and debugging capability** of the test framework.
+
 
 ---
 
